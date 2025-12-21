@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style2.css">
+    <title>Apply Now - LocalJobs</title>
+</head>
+<body>
+    <header>
+    <nav>
+      <h1>LocalJobs</h1>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="companies.html">Companies</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="apply-page">
+    <section class="apply-container">
+        <h2>Apply for this Job</h2>
+        <p>Please fill out the form below to submit your application.</p>
+
+        <form class="apply-form">
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <label for="resume">Upload Resume:</label><br>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+
+            <label for="coverletter">Cover Letter:</label><br>
+            <textarea id="coverletter" name="coverletter" rows="5" cols="33"></textarea><br><br>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LocalJobs.</p>  
+</body>
+</html>
