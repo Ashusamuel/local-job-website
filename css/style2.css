@@ -1,0 +1,194 @@
+/* =========================
+   1. RESET & BASE STYLES
+   ========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f7fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* =========================
+   2. HEADER & NAVIGATION
+   ========================= */
+
+header {
+  background-color: #0a65c0;
+  padding: 15px 40px;
+}
+
+nav {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   3. HERO SECTION
+   ========================= */
+
+.companies-hero {
+  background-color: #e6f0ff;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.companies-hero h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.companies-hero p {
+  font-size: 18px;
+  color: #555;
+}
+
+
+/* =========================
+   4. COMPANIES GRID
+   ========================= */
+
+.companies-page {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+
+/* =========================
+   5. COMPANY CARD
+   ========================= */
+
+.company-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.company-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+
+/* =========================
+   6. COMPANY IMAGE
+   ========================= */
+
+.company-card img {
+  width: 100%;
+  max-width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+
+/* =========================
+   7. COMPANY TEXT
+   ========================= */
+
+.company-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.company-card p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+
+/* =========================
+   8. COMPANY ACTION
+   ========================= */
+
+.company-card a {
+  display: inline-block;
+  padding: 10px 22px;
+  background-color: #0a65c0;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.company-card a:hover {
+  background-color: #084e96;
+}
+
+
+/* =========================
+   9. FOOTER
+   ========================= */
+
+footer {
+  background-color: #0a65c0;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+
+/* =========================
+   10. RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  .companies-page {
+    padding: 0 20px;
+  }
+
+  .companies-hero h2 {
+    font-size: 28px;
+  }
+}
